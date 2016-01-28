@@ -1,0 +1,106 @@
+.wrapper{
+	width:100%;
+	height:auto;
+	position: absolute;
+	left:0px;
+	top:220px;
+	p{
+		font-family:font5;
+		@include font-size(24px);
+	}
+
+	section{
+		text-align:center;
+
+		.mod2{
+			font-family:font7;
+			width:255px;
+			
+		}
+
+		hr{
+			width:100px;
+			height:3px;
+			background:$hover-links;
+			border: 0 none;
+
+			
+		}
+	}
+	.iphone_container{
+		background:$modulebg-grey;
+		padding-top:100px;
+		margin-top:100px;
+
+
+		p{
+			@include font-size(24px);
+			text-align:left;
+			width:60%;
+
+		}
+		figure{
+			text-align: left;
+		}
+	}
+	.cuisines{
+		padding-top:40px;
+
+		p{
+
+			@include font-size(34px);
+			font-family:font7;
+		}
+
+		span{
+			width:100%;
+			heigth:10px;
+			background:red;
+			z-index:9999;
+			display:block;
+
+		}
+
+		figure{
+			margin-bottom:10px;
+
+
+			img{
+				width:100%;
+				@include transition(all 1s ease);
+				opacity:0.8;
+				-webkit-filter: blur(2px);
+				filter: blur(2px);
+
+				&:hover{
+					@include transition(all .3s ease);
+					box-shadow: 0px 0px 10px #000000;
+					z-index: 2;
+					opacity:1;
+					-webkit-filter: blur(0px);
+					filter: blur(0px);
+					transform: scale(1.01);
+
+				}
+
+			}
+
+		}
+	}
+	footer{
+		background:$dropdownbg;
+		height:100px;
+		position:relative;
+		clear:both;
+
+		span{
+			display:block;
+			text-align:center;
+			color:$white;
+			padding-top:40px;
+			@include font-size(18px);
+
+		}
+
+	}
+}

@@ -1,0 +1,44 @@
+.headline{
+	position:fixed;
+	left:30%;
+	top:300px;
+	text-align:center;
+	color:$white;
+
+
+	h3{
+		@include font-size(36px);
+		font-family:font4;
+		opacity:0.8;
+	}
+	h1{
+		@include font-size(130px);
+		font-family:font7;
+	}
+	button{
+		background:transparent;
+		width: 200px;
+		height: 50px;
+		outline:none;
+		cursor:pointer;
+		border:1px solid $white;
+		font-family:font3;
+		border-radius:5px;
+		@include transition(background-color 0.3s ease);
+		
+
+
+		&:hover{
+			outline:none;
+			@include transition(background-color 0.3s ease);
+			background-color:$dropdownbg;			
+		}
+	}
+	p{
+		padding-top:10px;
+
+		a{
+			color:$white;
+		}
+	}
+}

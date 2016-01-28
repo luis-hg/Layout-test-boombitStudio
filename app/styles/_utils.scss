@@ -1,0 +1,40 @@
+//colors
+
+$white: #ffffff;
+$black: #000000;
+
+$hover-links: #ef311c;
+$dropdownbg: #4a3949;
+$modulebg-grey: #f7f7f7;
+
+
+
+
+
+
+
+//REM 
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+//Usage @include font-size(14px);
+
+
+
+
+//TRANSICIONS
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+/*@include transition(all .3s ease);*/
+
