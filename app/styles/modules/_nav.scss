@@ -20,16 +20,18 @@ nav{
 			margin-right: 10px;
 			font-family:font5;
 
-			&:first-child{
-				position:absolute;
-				left:13%;
-				top:0px;
-
-			}
+			
+			
 
 			&:hover{
 				color:$hover-links;
 			}
+
+		}
+		.setlogo{
+			position:absolute;
+			left:13%;
+			top:0px;
 
 		}
 		.c-hamburger {
