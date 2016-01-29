@@ -1,9 +1,10 @@
 .headline{
 	position:fixed;
-	left:30%;
+	left:0%;
 	top:300px;
 	text-align:center;
 	color:$white;
+	width:100%;
 
 
 	h3{
@@ -40,5 +41,26 @@
 		a{
 			color:$white;
 		}
+	}
+}
+@media only screen and (max-width: 480px){
+	.headline{
+		position:fixed;
+		left:0%;
+		top:300px;
+		text-align:center;
+		color:$white;
+		width:100%;
+
+
+		h3{
+			@include font-size(36px);
+			font-family:font4;
+			opacity:0.8;
+		}
+		h1{
+			@include font-size(40px);
+			font-family:font7;
+		}		
 	}
 }
